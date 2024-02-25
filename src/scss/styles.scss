@@ -1,0 +1,45 @@
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+@font-face {
+    font-family: 'Bukhari Script';
+    src: url('/assets/Bukhari Script.ttf') format('truetype');
+}
+
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+// 
+// https://caniuse.com/?search=scroll-padding
+
+html {
+    scroll-padding-top: 3.5rem;
+}
+
+h1 {
+    font-family: 'Bukhari Script';
+    transform: rotate(-10deg);
+    font-size: 6em;
+    text-shadow: 2px 2px #07924F;
+}
+
+.red-orange {
+    color: #FF5858;
+}
+.pastel-orange {
+    color: #FF914D;
+}
+
+// Header padding accounts for the height of the navbar
+header {
+    padding-top: 6rem + 3.5rem;
+    padding-bottom: 6rem;
+}
+.bg-image{
+    background-image: url('/assets/bg.png');
+}
+
+// Section padding
+section {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
