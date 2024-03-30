@@ -10849,10 +10849,19 @@ header {
 }
 
 .bg-image {
-  background-image: url("/assets/bg.png");
+  background-image: url("/img/bg.png");
 }
 
 section {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+
+.flex {
+  display: flex;
+  height: 50px;
+}
+
+.icon {
+  width: 48px;
 }

@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Tequila Tales</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -22,8 +22,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#map">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Where to find us</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,6 +42,12 @@
                         <h2>About us</h2>
                         <p class="lead">Are you looking for friends? Are you looking for some fun activities? Are you travelling to Prague and wanna enjoy among locals & expats?</p>
                         <p class="lead">Tequila Tales is all about bringing people together through appealing events. Become a member of this wonderful community and engage in our events for some fun times.</p>
+                        <p class="lead">Follow us on</p>
+                        <div style="display: flex; gap: 10px; justify-content: center">
+                            <a href="https://facebook.com/tequilatales"><img class="icon" src="/img/facebook.svg" /></a>
+                            <a href="https://instagram.com/tequilatales_prg"><img class="icon" src="/img/instagram.svg" /></a>
+                            <a href="https://meetup.com/tequilatales"><img class="icon" src="/img/meetup.svg" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,9 +58,7 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Events</h2>
-                        <div class="fb-page" data-href="https://www.facebook.com/tequilatales" data-tabs="events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/tequilatales" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tequilatales">Tequila Tales</a></blockquote>
-                        </div>
+                        <img src="/img/events.png" />
                     </div>
                 </div>
             </div>
@@ -65,57 +68,24 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>Contact us</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                        <h2>Where to find us</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1144.1625638075989!2d14.404036003149479!3d50.083037147481065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94fcb567fd03%3A0xd0031c3c5efcd4e1!2s%C3%9Ajezd%20409%2F19%2C%20118%2000%20Mal%C3%A1%20Strana!5e0!3m2!1sen!2scz!4v1711841691457!5m2!1sen!2scz" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Map-->
-        <section id="map"></section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Tequila Tales s.r.o. 2024</p></div>
+            <div class="container px-4">
+                <p class="m-0 text-center text-white"><a href="mailto:hello@tequilatales.party">hello@tequilatales.party</a></p>
+                <p class="m-0 text-center text-white">Copyright &copy; Tequila Tales s.r.o.</p>
+                <p class="m-0 text-center text-white">IČO: 21326142</p>
+                <p class="m-0 text-center text-white">2024</p>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script>
-            ((g) => {
-                var h,
-                    a,
-                    k,
-                    p = 'The Google Maps JavaScript API',
-                    c = 'google',
-                    l = 'importLibrary',
-                    q = '__ib__',
-                    m = document,
-                    b = window;
-                b = b[c] || (b[c] = {});
-                var d = b.maps || (b.maps = {}),
-                    r = new Set(),
-                    e = new URLSearchParams(),
-                    u = () =>
-                        h ||
-                        (h = new Promise(async (f, n) => {
-                            await (a = m.createElement('script'));
-                            e.set('libraries', [...r] + '');
-                            for (k in g)
-                                e.set(
-                                    k.replace(/[A-Z]/g, (t) => '_' + t[0].toLowerCase()),
-                                    g[k]
-                                );
-                            e.set('callback', c + '.maps.' + q);
-                            a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-                            d[q] = f;
-                            a.onerror = () => (h = n(Error(p + ' could not load.')));
-                            a.nonce = m.querySelector('script[nonce]')?.nonce || '';
-                            m.head.append(a);
-                        }));
-                d[l] ? console.warn(p + ' only loads once. Ignoring:', g) : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
-            })({ key: 'AIzaSyBq8zvM0_pLS-VC6sbBbuleAOu32y6B5qU', v: 'weekly' });
-        </script>
-        <script src="js/map.js"></script>
     </body>
 </html>
